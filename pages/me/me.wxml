@@ -1,0 +1,65 @@
+
+<button class='login' wx:if="{{!hasUserInfo}}" open-type='getUserInfo' bindgetuserinfo='getUserInfo'>登录</button>
+<view>
+<view wx:if="{{hasUserInfo}}" class='personal_data'>
+  <view class="">
+    
+      <block>
+          <view class='top_img'>
+            <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" ></image>
+            <view class='userinfo-nickname'>{{userInfo.nickName}}</view>
+          </view>
+         
+          <view open-type='contact' class='server'>
+            <!-- <text>联系客服</text>
+            <text style='color: #FFB90F;'>关注公众号</text>
+            <text>完善资料</text> -->
+            <text></text>
+            <text style='font-weight:bold;'>“活着就是为了改变世界。--乔布斯”</text>
+            <text></text>
+          </view>
+          
+
+      
+      </block>
+  </view>
+</view>
+  <view class='button_bar'>
+    <button class='contact' open-type='contact'>联系客服</button>
+  </view>
+</view>
+
+<view> 
+
+  <view wx:for="{{list}}" wx:key="{{item._id}}" id="{{item._id}}" class='item-container' >
+    <view class='content'>
+    <view class='userInfo_bar'>
+      <image class='Head_portrait' src='{{item.imageHead}}'></image>
+      <view>
+        <view class='duiqi'>
+          <text class='nickmane'>{{item.userName}}</text>
+          <text class='gender_1' wx:if="{{item.gender == 1}}" >♂</text>
+          <text class='gender_0' wx:if="{{item.gender == 0}}" >♀</text> 
+        </view>
+        <view class='publish_time'>{{item.time}}</view>
+        
+        <view class='tag'>
+          <text wx:key="{{item}}" wx:for="{{item.tag}}">{{item}}</text>
+        </view>
+      </view>
+    </view>
+    <!-- 图文内容 -->
+      <text class='title'>{{item.content}}</text>
+      <view wx:if="{{item.image}}" class="image">
+        <image lazy-load='ture' mode='aspectFit' src="{{item.image}}"></image>
+      </view>
+    </view>
+   
+    <view class='bottom_bar_bto_view'>
+      <view class='visit_bar'>
+        <view>浏览{{item.view}}次</view>
+        <view>有{{item.like}}人觉得很赞</view>
+      </view>
+    </view>
+  </view>
+</view>
