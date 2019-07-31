@@ -34,19 +34,6 @@ Page({
     
   },
 
-  // addCart(e){
-  //   const {item} = e.currentTarget.dataset
-  //   const i = app.globalData.carts.findIndex(v=>v._id==item._id)
-  //   if(i>-1){
-  //     // 存在 数量加一
-  //     app.globalData.carts[i].num += 1
-  //   }else{
-  //     item.num = 1
-  //     app.globalData.carts.push(item)
-  //   }
-  //   app.setTabbar()
-  // },
-
   setNotifyRemind(){
     db.collection('reply').where({
       uid: wx.getStorageSync('openID'),
