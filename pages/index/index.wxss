@@ -1,0 +1,216 @@
+.main-style{
+  
+}
+swiper{
+  top: 0;
+  margin: 0rpx 0rpx 10rpx 0rpx;
+}
+
+.item-container{
+  /* display: flex; */
+  padding: 5rpx 5rpx 125rpx 5rpx;
+  margin: 5rpx 30rpx 20rpx 30rpx; 
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px #dadada;
+  overflow:hidden; 
+  border: 5rpx dashed white;
+}
+
+.image{
+  margin-top: 5rpx;
+  text-align: center;
+}
+
+.content{
+  margin: 15rpx;
+}
+
+.title{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35rpx;
+  color: rgb(94, 94, 94);
+}
+
+.tag{
+  padding: 5rpx 10rpx 5rpx 10rpx;
+  margin-left: 10rpx;
+  border-radius: 12rpx;
+  color: rgb(233, 126, 126);
+  font-size: 28rpx;
+}
+
+.cart{
+  padding: 0 1rpx 5rpx 0;
+  background-color: rgb(233, 126, 126);
+  border-radius: 50%;
+  color: white;
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+}
+
+.slider-image{
+  width: 700rpx;
+  height: 300rpx;
+  margin: 5rpx 30rpx 50rpx 30rpx; 
+  background-color: white;
+
+}
+
+.send{
+  width: 100rpx;
+  height: 90rpx;
+  float: right;
+  font-size: 50rpx;
+  font-weight: bold;
+  color: rgb(233, 126, 126);
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  margin:0rpx 20rpx 20rpx 0rpx;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  padding-top: 10rpx;
+  z-index: 999;
+  position: fixed;
+  box-shadow: 1px 1px 20rpx #cecece;
+}
+
+.search{
+  border: 3rpx solid #cacaca;
+  border-radius: 50rpx;
+  padding:10rpx 10rpx 10rpx 30rpx;
+  margin: 10rpx 30rpx 10rpx 30rpx;
+  display: flex;
+}
+
+.icon_search{
+  margin-left: 190rpx;
+}
+
+.like{
+  width: 35rpx;
+  height: 35rpx;
+  margin: 15rpx 0 0 0; 
+}
+
+.bottom_bar{
+  margin-top: 50rpx;
+  width: 120rpx;
+  text-align: center;
+  
+}
+
+.bottom_bar_bto_like{
+  margin: 8rpx;
+}
+
+.bottom_bar_bto_view{
+  color: rgb(194, 194, 194);
+  padding:1rpx 15rpx 0rpx 10rpx;
+  margin: 0rpx 0rpx 0rpx 10rpx;
+  width: 635rpx;
+  font-size: 25rpx;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.likeBar{
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 140, 140);
+  border-radius: 50rpx;
+  padding:1rpx 20rpx 1rpx 15rpx;
+  margin-left: 40rpx; 
+  margin-top: 0rpx;
+  width: 60rpx;
+  height: 60rpx;
+  font-size: 40rpx;
+  box-shadow: 1px 1px 8px #dadada;
+  background-image: url(https://www.618sol.com.cn/img/like_1.png);
+  background-size: 45% 70%;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+
+.likeBar_active{
+  background-color: rgb(255, 140, 140);
+  color: white;
+  border-radius: 50rpx;
+  padding:1rpx 20rpx 1rpx 15rpx;
+  margin-left: 40rpx; 
+  margin-top: 0rpx;
+  width: 60rpx;
+  height: 60rpx;
+  font-size: 40rpx;
+  box-shadow: 1px 1px 10px #dadada;
+  background-image: url(https://www.618sol.com.cn/img/like_2.png);
+  background-size: 45% 70%;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+
+/* .like_icon{
+ background-image: url(https://www.618sol.com.cn/img/like_1.png);
+ background-size:80% 80%;
+ background-position: center;
+ background-repeat:no-repeat;
+ width: 100%;
+ height: 100%;
+} */
+
+.visit_bar{
+  margin: 40rpx 0rpx 0rpx 0rpx;
+}
+
+.Head_portrait{
+  width: 70rpx;
+  height: 70rpx;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px #dadada;
+}
+
+.nickmane{
+  color: rgb(145, 145, 145);
+  margin: 0rpx 0rpx 0rpx 20rpx;
+  font-size: 30rpx;
+}
+
+.publish_time{
+  color: rgb(145, 145, 145);
+  margin: 0rpx 0rpx 0rpx 20rpx;
+  font-size: 25rpx;
+}
+
+.userInfo_bar{
+  display: flex;
+  align-items: center;
+}
+
+.userInfo_bar_text{
+  display: flex;
+  justify-content: space-between;
+}
+
+.gender_1{
+  color: rgb(84, 132, 223);
+  margin: 0rpx 0rpx 0rpx 10rpx;
+  font-size: 25rpx;
+  font-weight: bold;
+}
+
+.gender_0{
+  color: rgb(255, 140, 140);
+  margin: 0rpx 0rpx 0rpx 10rpx;
+  font-size: 25rpx;
+  font-weight: bold;
+}
+
+.duiqi{
+  display: flex;
+  align-items: center;
+}

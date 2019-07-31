@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "onReachBottomDistance":50,
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "表白墙"
+}
