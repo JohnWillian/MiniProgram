@@ -12,13 +12,6 @@ Page({
     openID: wx.getStorageSync('openID')
   },
 
-  // notice(){
-  //   const id = this.data.openID
-  //   wx.navigateTo({
-  //     url: '/pages/notification/notification?id'+id,
-  //   })
-  // },
-
   onPullDownRefresh() {
     this.getList(true)
   },
@@ -57,50 +50,7 @@ Page({
       url: '../logs/logs'
     })
   },
-  // getMall(){
-  //   db.collection('emall').get({
-  //     success:res=>{
-  //       console.log(res)
-  //     }
-  //   })
-  // },
-  // addMall(){
-  //   wx.chooseImage({
-  //     count:1,
-  //     success: function(res) {
-  //       const filePath = res.tempFilePaths[0]
-  //       const tempFile = filePath.split('.')
-  //       const cloudPath = 'my-img-' + tempFile[tempFile.length-2]
-  //       wx.cloud.uploadFile({
-  //         filePath,
-  //         cloudPath,
-  //         success:res=>{
-  //           db.collection('emall').add({
-  //           data:{
-  //             title:'商品2',
-  //             price:18,
-  //             tags:['book','food'],
-  //             image: res.fileID
-  //           },
-  //           success:ret=>{
-  //             console.log(ret)
-  //             wx.showToast({
-  //               title: '新增成功',
-  //             })
-  //           }
-  //         })
-  //         }
-  //       })
-
-  //     },
-  //   })
-
-
-  //   // 新增
-
-
-
-  // },
+ 
   onLoad: function () {
     
     console.log(wx.getStorageSync('openID'))
