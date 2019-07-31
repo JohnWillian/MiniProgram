@@ -1,0 +1,60 @@
+<!--index.wxml-->
+<view class='main-style'>
+
+  <view class='send' bindtap='send'>
+    +
+  </view>
+  <swiper 
+    indicator-dots='ture'
+    indicator-active-color='rgb(233, 126, 126)'
+    circular='ture'
+    autoplay='ture'
+    interval='4000'
+  >
+    <block wx:for="{{banner}}" wx:key="{{banner}}">
+      <swiper-item>
+        <image src="{{item}}" mode='aspectFit' class='slider-image'/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view wx:for="{{list}}" wx:key="{{item._id}}" id="{{item._id}}" class='item-container' bindtap="toDetail">
+    <view class='content'>
+    <view class='userInfo_bar'>
+      <image class='Head_portrait' src='{{item.imageHead}}'></image>
+      <view>
+        <view class='duiqi'>
+          <text class='nickmane'>{{item.userName}}</text>
+          <text class='gender_1' wx:if="{{item.gender == 1}}" >♂</text>
+          <text class='gender_0' wx:if="{{item.gender == 0}}" >♀</text> 
+        </view>
+        <view class='publish_time'>{{item.time}}</view>
+        <view class='tag'>
+          <text wx:key="{{item}}" wx:for="{{item.tag}}">{{item}}</text>
+        </view>
+      </view>
+      
+      <!-- 图文内容 -->
+    </view>
+      <text class='title'>{{item.content}}</text>
+      <view wx:if="{{item.image}}" class="image">
+        <image lazy-load='ture' mode='aspectFit' src="{{item.image}}"></image>
+      </view>
+    </view>
+   
+    <view class='bottom_bar_bto_view'>
+      <view class='visit_bar'>
+        <view>浏览{{item.view}}次</view>
+        <view>有{{item.like}}人觉得很赞</view>
+      </view>
+
+      <!-- 点赞按钮 -->
+      <view wx:key="{{item._id}}" data-index="{{index}}" class='bottom_bar'>
+          <view class='{{item.like_bar_style}} bottom_bar_bto_like' wx:key="{{item._id}}" id="{{item._id}}" catchtap='like' data-index='{{index}}'>
+            <!-- <text class='like'>♥</text> -->
+            <view class='like_icon'></view>
+          </view>
+      </view>
+    </view><!-- action_view_end -->
+  </view>
+</view>
