@@ -1,0 +1,25 @@
+<view>
+  <view>
+    <button class='send-bto' bindtap='{{upload_bind}}'>发送</button>
+  </view>
+
+  <view class='input'>
+    <textarea id='_content' placeholder='在此输入内容...' maxlength='140' bindinput='getContent'></textarea> 
+  </view>
+  <view class='tag_bar'>
+    <text class="{{tag_style1}}" bindtap='getTags1'>{{tag1}}</text>
+    <text class="{{tag_style2}}" bindtap='getTags2'>{{tag2}}</text>
+    <text class="{{tag_style3}}" bindtap='getTags3'>{{tag3}}</text>
+    <text class='anonymous'>匿名</text>
+    <switch class='switch_style' bindchange="switchChange" />
+  </view>
+   
+  <view class='upload-image' bindtap='uploadImg'>
+    <block wx:key="{{index}}">
+      <image mode='aspectFit' class='icon-camera' src="{{cameraImg}}"></image>
+      <!-- <video wx:if='{{cameraVideo}}' class='icon-camera' src="{{cameraVideo}}" controls></video> -->
+    </block>
+  </view>
+
+</view>
+
