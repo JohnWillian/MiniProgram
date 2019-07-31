@@ -1,0 +1,92 @@
+.tag{
+  padding: 10rpx 25rpx 10rpx 25rpx;
+  background-color: rgb(224, 224, 224);
+  border-radius: 50rpx;
+  margin: 0rpx 0rpx 30rpx 30rpx;
+  color: rgb(73, 73, 73);
+  font-size: 35rpx;
+  width: 100rpx;
+  height: 50rpx;
+}
+
+.tag_active{
+  padding: 10rpx 25rpx 10rpx 25rpx;
+  background-color: rgb(230, 118, 118);
+  border-radius: 50rpx;
+  margin: 0rpx 0rpx 30rpx 30rpx;
+  color: white;
+  font-size: 35rpx;
+  width: 100rpx;
+  height: 50rpx;
+}
+
+.input{
+  width: 640rpx;
+  height: 400rpx;
+  border-radius: 20rpx;
+  box-shadow: 2px 2px 20px #dadada;
+  margin-left: 25rpx;
+  margin-bottom: 30rpx;
+  padding: 30rpx;
+}
+textarea{
+  width: 640rpx;
+}
+
+.upload-image{
+  border-radius: 30rpx;
+  width: 200rpx;
+  height: 200rpx;
+  margin: 30rpx 0 0 30rpx;
+}
+
+.icon-camera{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 30rpx;
+}
+
+.send-bto{
+  width: 150rpx;
+  margin: 0rpx 10rpx 20rpx 570rpx;
+  font-size: 30rpx;
+  background-color: rgb(230, 118, 118);
+  color: white;
+  border-radius: 50rpx;
+  box-shadow: 1px 1px 10px #dadada;
+}
+
+
+/* 开关 */
+.anonymous{
+
+  color: rgb(88, 88, 88);
+  margin:0rpx 0rpx 0 110rpx;
+  font-size: 35rpx;
+}
+
+
+.switch_style{
+  position: absolute;
+  right: 0;
+  margin-right: 20rpx;
+}
+
+/*swtich整体大小及背景色*/
+.wx-switch-input{
+    width:95rpx !important;
+    height:50rpx !important;
+    background: #50D2C2 !important;
+  
+    box-shadow: 1px 1px 10px #dadada;
+}
+/*白色样式（false的样式）*/
+.wx-switch-input::before{
+    width:95rpx !important;
+    height: 50rpx !important;
+}
+/*绿色样式（true的样式）*/
+.wx-switch-input::after{
+    width: 55rpx !important;
+    height: 50rpx !important;
+}
