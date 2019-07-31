@@ -1,0 +1,41 @@
+<view>
+
+  <!-- 输入评论 -->
+  <view class='reply_bar'>
+    <view class='reply_style'>
+      <input maxlength='100' value='{{inputValue}}' class='reply_input' adjust-position="true" confirm-type="send" type='text' placeholder='评论...' bindinput='getComment'></input>
+      
+    </view>
+    <view class='reply_bto' bindtap='reply'>回复</view>
+  </view>
+  <!-- 图文内容 -->
+  <view class='content_bar'>
+    <view class='userInfo_bar'>
+      <image class='Head_portrait' src='{{info.imageHead}}'></image>
+      <view>
+        <text class='nickmane'>{{info.userName}}</text>
+        <view class='publish_time'>{{info.time}}</view>
+        <view class='tag'>
+          <text wx:key="{{info}}" wx:for="{{info.tag}}">{{item}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="text">{{info.content}}</view>
+    <image id='getHeigh' wx:if="{{info.image}}" class='image' mode='aspectFit' data-index="{{index}}" src='{{info.image}}' bindtap='previewImage'></image>
+  </view>
+
+  <!-- 评论 -->
+  <view class='comment_bar'>
+    <view class='comment_style' wx:for="{{commentArr}}" wx:key="{{commentArr}}">
+      <image class='Head_portrait' src='{{item.image}}'></image>
+      <view style='{{item.color}}' class='comment_style_text1'>{{item.userName}}</view>
+      <view class='comment_style_text2'>{{item.comment}}</view>
+    </view>
+  </view>
+
+  <view>
+    <view></view>
+  </view> 
+
+</view>
+ 
