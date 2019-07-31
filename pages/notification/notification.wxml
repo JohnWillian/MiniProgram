@@ -1,0 +1,15 @@
+<view>
+   <view wx:if='{{list==0}}' class='noNotice'>没有更多通知了～</view>
+  <view class='item-container' wx:for='{{list}}' wx:key="{{item._id}}" id="{{item._id}}" bindtap='toDetail'>
+    <view class='duiqi'>
+      <image class='Head_portrait' src='{{item.image}}'></image>
+      <view class='content_width'>
+        <view class='nickmane'>{{item.userName}}</view>
+        <wxs src="../wxs/subutil.wxs" module="tools" />
+        <view class='content'>{{tools.sub(item.comment)}}</view>
+        <view class='time'>{{item.time}}</view>
+      </view>
+    </view>
+    <image mode='aspectFit' class='content_image' src='{{item.content_image}}'></image>
+  </view>
+</view>
