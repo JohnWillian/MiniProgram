@@ -1,0 +1,79 @@
+.item-container{
+  padding: 20rpx;
+  margin: 5rpx 30rpx 20rpx 30rpx; 
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px #dadada;
+  overflow:hidden; 
+  border: 5rpx dashed white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.noNotice{
+  text-align: center;
+  color: rgb(153, 153, 153);
+  font-size: 35rpx;
+  margin-top: 50rpx;
+}
+
+.duiqi{
+  display: flex;
+}
+
+.Head_portrait{
+  width: 120rpx;
+  height: 120rpx;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px #dadada;
+}
+
+.content_image{
+  width: 150rpx;
+  height: 150rpx;
+  overflow: hidden;
+  border-radius: 20rpx;
+}
+
+.nickmane{
+  color: rgb(145, 145, 145);
+  margin: 0rpx 0rpx 0rpx 20rpx;
+  font-size: 30rpx;
+}
+
+.cotent_width{
+  width: 70%;
+}
+
+.content{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35rpx;
+  color: rgb(94, 94, 94);
+  margin: 0rpx 0rpx 0rpx 20rpx;
+}
+
+.gender_1{
+  color: rgb(84, 132, 223);
+  margin: 0rpx 0rpx 0rpx 10rpx;
+  font-size: 25rpx;
+  font-weight: bold;
+}
+
+.gender_0{
+  color: rgb(255, 140, 140);
+  margin: 0rpx 0rpx 0rpx 10rpx;
+  font-size: 25rpx;
+  font-weight: bold;
+}
+
+.duiqi{
+  display: flex;
+  align-items: center;
+}
+
+.time{
+  color: rgb(145, 145, 145);
+  margin: 0rpx 0rpx 0rpx 20rpx;
+  font-size: 25rpx;
+}
