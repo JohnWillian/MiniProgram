@@ -130,7 +130,7 @@ swiper{
   height: 60rpx;
   font-size: 40rpx;
   box-shadow: 1px 1px 8px #dadada;
-  background-image: url(https://www.618sol.com.cn/img/like_1.png);
+  background-image: url(https://www.618sol.com.cn/img/like_2.png);
   background-size: 45% 70%;
   background-position: center;
   background-repeat:no-repeat;
@@ -147,7 +147,7 @@ swiper{
   height: 60rpx;
   font-size: 40rpx;
   box-shadow: 1px 1px 10px #dadada;
-  background-image: url(https://www.618sol.com.cn/img/like_2.png);
+  background-image: url(https://www.618sol.com.cn/img/like_3.png);
   background-size: 45% 70%;
   background-position: center;
   background-repeat:no-repeat;

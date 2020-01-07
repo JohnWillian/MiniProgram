@@ -1,5 +1,9 @@
 <!--index.wxml-->
 <view class='main-style'>
+<!-- <view class='search'>
+  <input placeholder="搜索" focus='true' />
+  <icon class='icon_search' type='search' bindtap='search' />
+</view> -->
 
   <view class='send' bindtap='send'>
     +
@@ -11,6 +15,11 @@
     autoplay='ture'
     interval='4000'
   >
+    <!-- <block wx:for="{{tops}}" wx:key="{{item._id}}">
+      <swiper-item>
+       <image src="{{item.image}}" mode='aspectFit' class='slider-image'></image>
+      </swiper-item>
+    </block> -->
     <block wx:for="{{banner}}" wx:key="{{banner}}">
       <swiper-item>
         <image src="{{item}}" mode='aspectFit' class='slider-image'/>
@@ -43,6 +52,10 @@
     </view>
    
     <view class='bottom_bar_bto_view'>
+
+      <!-- <view class='cart' data-item="{{item}}" catchtap='addCart'>
+      +
+      </view> -->
       <view class='visit_bar'>
         <view>浏览{{item.view}}次</view>
         <view>有{{item.like}}人觉得很赞</view>
