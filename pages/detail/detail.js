@@ -41,13 +41,14 @@ Page({
         title: '评论内容不能为空！',
       })
     } else {
-      console.log(e)
+      var comment_transfer = this.data._comment.toString(); //int转string
+      console.log(e);
       var id = this.data.id;
       var time = util.formatTime(new Date());
       if (this.data.userInfo.nickName == 'NASA'){
       db.collection('reply').add({
         data:{
-          comment: this.data._comment,
+          comment: comment_transfer,
           content_id: id,
           userName: this.data.userInfo.nickName,
           image: this.data.userInfo.avatarUrl,
@@ -77,7 +78,7 @@ Page({
       }else{
         db.collection('reply').add({
           data: {
-            comment: this.data._comment,
+            comment: comment_transfer,
             content_id: id,
             userName: this.data.userInfo.nickName,
             image: this.data.userInfo.avatarUrl,
@@ -108,7 +109,55 @@ Page({
     
     }
   },
-  
+  //微信支付
+  // order(){
+  //   wx.cloud.callFunction({
+  //     name:'emall-pay',
+  //     data:{
+  //       type: 'unifiedorder',
+  //       data:{
+  //         goodId: this.data.id
+  //       }
+  //     },
+  //     success:res=>{
+  //       const data = result.data
+
+  //       // 再次签名
+  //       wx.cloud.callFunction({
+  //         name: 'emall-pay',
+  //         data: {
+  //           type: 'orderquery',
+  //           data: {
+  //             out_trade_no: result.result.data.out_trade_no
+  //           }
+  //         },
+  //         success:queryRet=>{
+  //           const{
+  //             time_stamp,
+  //             nonce_str,
+  //             sign,
+  //             prepay_id,
+  //             body,
+  //             total_fee
+  //           }=queryRet.result.data
+
+  //           // 拉起微信支付
+  //           wx.requestPayment({
+  //             timeStamp: 'time_stamp',
+  //             nonceStr: 'nonce_str',
+  //             package: 'prepay_id=${prepay_id}',
+  //             signType: 'MD5',
+  //             paySign: 'sign',
+  //             success(){
+  //               wx.hideLoading()
+  //             }
+  //           })
+  //         }
+  //       })
+  //     }
+  //   })
+  // },
+
   onLoad: function (options) {
     
    this.setData({

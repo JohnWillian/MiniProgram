@@ -1,4 +1,5 @@
 <view>
+  <!-- <view>{{info._id}}</view> -->
 
   <!-- 输入评论 -->
   <view class='reply_bar'>
@@ -21,7 +22,7 @@
       </view>
     </view>
     <view class="text">{{info.content}}</view>
-    <image id='getHeigh' wx:if="{{info.image}}" class='image' mode='aspectFit' data-index="{{index}}" src='{{info.image}}' bindtap='previewImage'></image>
+    <image id='getHeigh' wx:if="{{info.image}}" class='image' mode='aspectFill' data-index="{{index}}" src='{{info.image}}' bindtap='previewImage'></image>
   </view>
 
   <!-- 评论 -->
